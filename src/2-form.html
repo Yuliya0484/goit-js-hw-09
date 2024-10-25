@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Feedback form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -12,6 +12,30 @@
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Form</h1>
+      </div>
+      <div class="feedback-container">
+        <form class="feedback-form" autocomplete="off">
+          <label class="feedback-label"
+            >Email
+            <input
+              class="feedback-input"
+              type="email"
+              name="email"
+              autofocus
+              required
+            />
+          </label>
+          <label class="feedback-label"
+            >Message
+            <textarea
+              class="feedback-textarea"
+              name="message"
+              required
+              rows="8"
+            ></textarea>
+          </label>
+          <button class="feedback-btn" type="submit">Submit</button>
+        </form>
       </div>
     </main>
     <script type="module" src="./js/2-form.js"></script>
